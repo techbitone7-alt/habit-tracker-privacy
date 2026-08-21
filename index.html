@@ -6,7 +6,7 @@
 </head>
 <body style="font-family: Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 16px; line-height: 1.6;">
   <h1>Privacy Policy</h1>
-  <p><em>Last updated: August 3, 2026</em></p>
+  <p><em>Last updated: August 21, 2026</em></p>
   <p>Habit Tracker ("the App") is developed by Aashish Sanjel / Techbitone. This Privacy Policy explains what information the App collects, how it is stored, and how it is used.</p>
 
   <h2>Data Stored Locally</h2>
@@ -14,11 +14,14 @@
   <ul>
     <li>Habits, completion history, and streaks</li>
     <li>Routine schedule entries</li>
-    <li>Activity log entries ("What's Next")</li>
-    <li>Journal entries, including Reflection/Gratitude, Realities/Problems, and daily reflections</li>
+    <li>Hourly Log entries (what you did during each hour of your day)</li>
+    <li>Journal entries, including your daily star rating, Reflection/Gratitude, Realities/Problems, and daily reflections</li>
+    <li>Goals, their status, and any dated notes you add to them</li>
+    <li>Spending and earning entries, and any custom categories you create</li>
+    <li>Reward points, earned through your everyday use of the App</li>
     <li>App settings and preferences</li>
   </ul>
-  <p>This local data is stored in an <strong>encrypted database on your device</strong>. You can also enable an optional <strong>App Lock</strong>, which requires your fingerprint, face, or device PIN/pattern before the App can be opened, in addition to your device's own lock screen.</p>
+  <p>This local data is stored in an <strong>encrypted database on your device</strong>. You can also enable an optional <strong>App Lock</strong>, which requires your fingerprint, face, or device PIN/pattern before the App can be opened, in addition to your device's own lock screen. This biometric check is handled entirely by your device's own operating system - the App never receives or stores your actual fingerprint, face data, or PIN; it only receives a yes/no confirmation that you passed the check.</p>
   <p>None of this data is transmitted to us or any third party unless you choose to sign in with a Google account (see below) or export it yourself.</p>
 
   <h2>Guest Mode</h2>
@@ -26,22 +29,27 @@
 
   <h2>Google Sign-In and Cloud Sync</h2>
   <p>If you choose to sign in with Google, the App receives basic profile information from your Google account (your name, email address, and profile photo) to identify your account within the App.</p>
-  <p>Once signed in, your habits, routine schedule, activity log, and journal entries are synced to a private, per-account database (Google Firestore) so they're available across your devices. This data is stored under your own authenticated account and is not accessible to other users of the App.</p>
+  <p>Once signed in, your habits, routine schedule, hourly log, journal entries, goals, and spending/earning records are synced to a private, per-account database (Google Firestore) so they're available across your devices. This data is stored under your own authenticated account and is not accessible to other users of the App.</p>
   <p>Please note: while this data is encrypted at rest by Google's infrastructure, it is <strong>not end-to-end encrypted</strong> the way your on-device data is. This means it is technically accessible to us as the developer through our Firestore console, in the same way it would be for any app using a standard cloud database. We do not access, read, or share this data except as needed to maintain or troubleshoot the service.</p>
+  <p>Reward points are also synced across your devices when signed in, the same way as the data above.</p>
+
+  <h2>Device Usage Access</h2>
+  <p>The App includes an optional Device Usage feature that shows how much time you've spent in each app on your phone - not just Habit Tracker - along with how many times each was opened. To provide this, the App requests Android's special "Usage Access" permission, which you grant manually from your device's system settings; Android does not allow this to be requested through an ordinary in-app permission prompt, by design, since it reveals information about your broader app usage.</p>
+  <p><strong>This usage data is never stored by the App and is never synced to the cloud.</strong> Each time you view the Device Usage screen, the App asks Android directly for that day's statistics, displays them, and does not save a copy anywhere - not in the local database, not in Firestore. If you don't grant this permission, or revoke it later, this feature simply shows nothing; every other part of the App works exactly the same either way.</p>
 
   <h2>Advertising</h2>
-  <p>The App displays ads served through Google AdMob. To do this, AdMob may collect and use your device's advertising identifier and other technical information (such as general device type and approximate location derived from your IP address) to show ads and measure their performance. This is separate from, and never combined with, the habit, routine, activity log, or journal data described above - AdMob does not have access to that content.</p>
+  <p>The App displays ads served through Google AdMob. To do this, AdMob may collect and use your device's advertising identifier and other technical information (such as general device type and approximate location derived from your IP address) to show ads and measure their performance. This is separate from, and never combined with, any of your habit, routine, hourly log, journal, goal, spending, or device usage data - AdMob does not have access to that content.</p>
   <p>You can review how Google collects and uses this data through AdMob at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>. Depending on your device and region, you may be able to opt out of personalized advertising through your device's ad settings.</p>
 
   <h2>Data We Do Not Collect</h2>
-  <p>Other than the advertising data described above, the App does not use analytics or third-party tracking SDKs. We do not sell your information, and we do not share your habit, routine, activity log, or journal data with third parties.</p>
+  <p>Other than the advertising data described above, the App does not use analytics or third-party tracking SDKs. We do not sell your information, and we do not share your habit, routine, hourly log, journal, goal, or spending data with third parties.</p>
 
   <h2>Data Export and Reports</h2>
-  <p>You may export your habit data, or download a Daily Report combining your Routine, What's Next log, and Journal entries as a PDF, at any time from within the App. These files are saved to your own device and are fully within your control. Please note that exported files and PDFs are <strong>not encrypted</strong> - if you choose to share or store them elsewhere, treat them with the same care you would any personal document.</p>
+  <p>You may export your habit data, or download a Daily Report combining that day's completed habits, routine, hourly log, goal activity, spending, screen time, and journal entry, as a PDF, at any time from within the App. These files are saved to your own device and are fully within your control. Please note that exported files and PDFs are <strong>not encrypted</strong> - if you choose to share or store them elsewhere, treat them with the same care you would any personal document.</p>
 
   <h2>Deleting Your Data</h2>
-  <p>You can permanently delete all of your data, both on your device and in the cloud, at any time using "Reset All Data" in the App's Profile settings. This action is irreversible.</p>
-  <p>If you would like your account itself removed, contact us at the email below and we will process your request promptly.</p>
+  <p>You can permanently delete all of your data, both on your device and in the cloud, at any time using "Reset All Data" in the App's Settings. This action is irreversible.</p>
+  <p>If you would like your account itself removed, you can do this yourself using "Delete Account" in Settings, or contact us at the email below and we will process your request promptly.</p>
 
   <h2>Children's Privacy</h2>
   <p>The App is not directed at children under 13, and we do not knowingly collect personal information from children under 13. We do not knowingly serve personalized ads to children.</p>
